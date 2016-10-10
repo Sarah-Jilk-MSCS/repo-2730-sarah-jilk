@@ -21,6 +21,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sjilk_2a1", "SJILK_2A1\Sjil
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sjilk_2B1", "sjilk_2B1\sjilk_2B1.vbproj", "{659DD5FA-1DE6-48DD-9A6F-C8D9D16B6F97}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sjilk2C1", "sjilk2C1\sjilk2C1.vbproj", "{EA03CC13-B842-4289-B87D-EEEBD4284566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{659DD5FA-1DE6-48DD-9A6F-C8D9D16B6F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{659DD5FA-1DE6-48DD-9A6F-C8D9D16B6F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{659DD5FA-1DE6-48DD-9A6F-C8D9D16B6F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA03CC13-B842-4289-B87D-EEEBD4284566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA03CC13-B842-4289-B87D-EEEBD4284566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA03CC13-B842-4289-B87D-EEEBD4284566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA03CC13-B842-4289-B87D-EEEBD4284566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
