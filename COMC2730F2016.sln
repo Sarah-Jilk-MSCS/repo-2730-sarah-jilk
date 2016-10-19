@@ -23,6 +23,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sjilk_2B1", "sjilk_2B1\sjil
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sjilk2C1", "sjilk2C1\sjilk2C1.vbproj", "{EA03CC13-B842-4289-B87D-EEEBD4284566}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SJILK_2F1", "SJILK_2F1\SJILK_2F1.vbproj", "{78F6264D-D898-4ADB-B04E-313E7B40952A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SJILK_2D1", "WindowsApplication1\SJILK_2D1.vbproj", "{349FB502-CD7B-4824-BC85-57AF2CB9E164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{EA03CC13-B842-4289-B87D-EEEBD4284566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA03CC13-B842-4289-B87D-EEEBD4284566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA03CC13-B842-4289-B87D-EEEBD4284566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F6264D-D898-4ADB-B04E-313E7B40952A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F6264D-D898-4ADB-B04E-313E7B40952A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F6264D-D898-4ADB-B04E-313E7B40952A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F6264D-D898-4ADB-B04E-313E7B40952A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349FB502-CD7B-4824-BC85-57AF2CB9E164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349FB502-CD7B-4824-BC85-57AF2CB9E164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349FB502-CD7B-4824-BC85-57AF2CB9E164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349FB502-CD7B-4824-BC85-57AF2CB9E164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
