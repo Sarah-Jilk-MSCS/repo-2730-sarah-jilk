@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmMain
+Partial Class chkParking
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -43,23 +43,34 @@ Partial Class frmMain
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.radQueen = New System.Windows.Forms.RadioButton()
+        Me.radKing = New System.Windows.Forms.RadioButton()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.radStandard = New System.Windows.Forms.RadioButton()
+        Me.radAtrium = New System.Windows.Forms.RadioButton()
+        Me.chkParkingFee = New System.Windows.Forms.CheckBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lblParking = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblTotalDue
         '
         Me.lblTotalDue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalDue.Location = New System.Drawing.Point(115, 127)
+        Me.lblTotalDue.Location = New System.Drawing.Point(115, 160)
         Me.lblTotalDue.Name = "lblTotalDue"
         Me.lblTotalDue.Size = New System.Drawing.Size(93, 26)
-        Me.lblTotalDue.TabIndex = 7
+        Me.lblTotalDue.TabIndex = 9
         Me.lblTotalDue.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(278, 228)
+        Me.btnExit.Location = New System.Drawing.Point(289, 356)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(97, 31)
         Me.btnExit.TabIndex = 2
@@ -72,12 +83,12 @@ Partial Class frmMain
         Me.lblResortFee.Location = New System.Drawing.Point(115, 95)
         Me.lblResortFee.Name = "lblResortFee"
         Me.lblResortFee.Size = New System.Drawing.Size(93, 26)
-        Me.lblResortFee.TabIndex = 6
+        Me.lblResortFee.TabIndex = 7
         Me.lblResortFee.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnCalc
         '
-        Me.btnCalc.Location = New System.Drawing.Point(136, 228)
+        Me.btnCalc.Location = New System.Drawing.Point(147, 356)
         Me.btnCalc.Name = "btnCalc"
         Me.btnCalc.Size = New System.Drawing.Size(97, 31)
         Me.btnCalc.TabIndex = 1
@@ -90,7 +101,7 @@ Partial Class frmMain
         Me.lblTax.Location = New System.Drawing.Point(115, 63)
         Me.lblTax.Name = "lblTax"
         Me.lblTax.Size = New System.Drawing.Size(93, 26)
-        Me.lblTax.TabIndex = 5
+        Me.lblTax.TabIndex = 6
         Me.lblTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblRoomChg
@@ -99,7 +110,7 @@ Partial Class frmMain
         Me.lblRoomChg.Location = New System.Drawing.Point(115, 31)
         Me.lblRoomChg.Name = "lblRoomChg"
         Me.lblRoomChg.Size = New System.Drawing.Size(93, 26)
-        Me.lblRoomChg.TabIndex = 4
+        Me.lblRoomChg.TabIndex = 5
         Me.lblRoomChg.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'GroupBox1
@@ -112,9 +123,9 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(136, 23)
+        Me.GroupBox1.Location = New System.Drawing.Point(126, 138)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(217, 189)
+        Me.GroupBox1.Size = New System.Drawing.Size(226, 202)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Number of"
@@ -186,10 +197,10 @@ Partial Class frmMain
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(31, 132)
+        Me.Label8.Location = New System.Drawing.Point(31, 165)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(93, 25)
-        Me.Label8.TabIndex = 3
+        Me.Label8.TabIndex = 4
         Me.Label8.Text = "Total due:"
         '
         'Label7
@@ -224,13 +235,15 @@ Partial Class frmMain
         Me.PictureBox1.Image = Global.Treeline_Project.My.Resources.Resources.Tree
         Me.PictureBox1.Location = New System.Drawing.Point(21, 23)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(95, 135)
+        Me.PictureBox1.Size = New System.Drawing.Size(99, 138)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lblParking)
+        Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.lblRoomChg)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.lblTotalDue)
@@ -239,18 +252,115 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.lblResortFee)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.lblTax)
-        Me.GroupBox2.Location = New System.Drawing.Point(371, 23)
+        Me.GroupBox2.Location = New System.Drawing.Point(380, 138)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(239, 189)
-        Me.GroupBox2.TabIndex = 0
+        Me.GroupBox2.Size = New System.Drawing.Size(232, 202)
+        Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Charges"
         '
-        'frmMain
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.radKing)
+        Me.GroupBox3.Controls.Add(Me.radQueen)
+        Me.GroupBox3.Location = New System.Drawing.Point(126, 23)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(165, 109)
+        Me.GroupBox3.TabIndex = 3
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Type"
+        '
+        'radQueen
+        '
+        Me.radQueen.AutoSize = True
+        Me.radQueen.Checked = True
+        Me.radQueen.Location = New System.Drawing.Point(22, 31)
+        Me.radQueen.Name = "radQueen"
+        Me.radQueen.Size = New System.Drawing.Size(125, 29)
+        Me.radQueen.TabIndex = 0
+        Me.radQueen.TabStop = True
+        Me.radQueen.Text = "Two &queen"
+        Me.radQueen.UseVisualStyleBackColor = True
+        '
+        'radKing
+        '
+        Me.radKing.AutoSize = True
+        Me.radKing.Location = New System.Drawing.Point(22, 66)
+        Me.radKing.Name = "radKing"
+        Me.radKing.Size = New System.Drawing.Size(109, 29)
+        Me.radKing.TabIndex = 1
+        Me.radKing.Text = "One &king"
+        Me.radKing.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.radAtrium)
+        Me.GroupBox4.Controls.Add(Me.radStandard)
+        Me.GroupBox4.Location = New System.Drawing.Point(297, 23)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(142, 109)
+        Me.GroupBox4.TabIndex = 4
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "View"
+        '
+        'radStandard
+        '
+        Me.radStandard.AutoSize = True
+        Me.radStandard.Checked = True
+        Me.radStandard.Location = New System.Drawing.Point(24, 31)
+        Me.radStandard.Name = "radStandard"
+        Me.radStandard.Size = New System.Drawing.Size(108, 29)
+        Me.radStandard.TabIndex = 0
+        Me.radStandard.TabStop = True
+        Me.radStandard.Text = "&Standard"
+        Me.radStandard.UseVisualStyleBackColor = True
+        '
+        'radAtrium
+        '
+        Me.radAtrium.AutoSize = True
+        Me.radAtrium.Location = New System.Drawing.Point(24, 66)
+        Me.radAtrium.Name = "radAtrium"
+        Me.radAtrium.Size = New System.Drawing.Size(90, 29)
+        Me.radAtrium.TabIndex = 1
+        Me.radAtrium.Text = "A&trium"
+        Me.radAtrium.UseVisualStyleBackColor = True
+        '
+        'chkParkingFee
+        '
+        Me.chkParkingFee.AutoSize = True
+        Me.chkParkingFee.Location = New System.Drawing.Point(445, 35)
+        Me.chkParkingFee.Name = "chkParkingFee"
+        Me.chkParkingFee.Size = New System.Drawing.Size(195, 29)
+        Me.chkParkingFee.TabIndex = 5
+        Me.chkParkingFee.Text = "&Vehicle parking fee"
+        Me.chkParkingFee.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(31, 132)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(79, 25)
+        Me.Label9.TabIndex = 3
+        Me.Label9.Text = "Parking:"
+        '
+        'lblParking
+        '
+        Me.lblParking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblParking.Location = New System.Drawing.Point(116, 129)
+        Me.lblParking.Name = "lblParking"
+        Me.lblParking.Size = New System.Drawing.Size(93, 26)
+        Me.lblParking.TabIndex = 8
+        Me.lblParking.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'chkParking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 303)
+        Me.ClientSize = New System.Drawing.Size(634, 429)
+        Me.Controls.Add(Me.chkParkingFee)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnExit)
@@ -259,7 +369,7 @@ Partial Class frmMain
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Name = "frmMain"
+        Me.Name = "chkParking"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Treeline Resort"
         Me.GroupBox1.ResumeLayout(False)
@@ -267,7 +377,12 @@ Partial Class frmMain
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -292,4 +407,13 @@ Partial Class frmMain
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents radKing As RadioButton
+    Friend WithEvents radQueen As RadioButton
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents radAtrium As RadioButton
+    Friend WithEvents radStandard As RadioButton
+    Friend WithEvents chkParkingFee As CheckBox
+    Friend WithEvents lblParking As Label
+    Friend WithEvents Label9 As Label
 End Class
